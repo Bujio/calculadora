@@ -1,0 +1,188 @@
+/* ABSOLUTOS */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+/* AREAS */
+.total {
+  grid-area: area-total;
+}
+
+.do {
+  grid-area: area-do;
+}
+
+.flecha {
+  grid-area: area-flecha;
+}
+
+.dividir {
+  grid-area: area-dividir;
+}
+
+.number7 {
+  grid-area: area-7;
+}
+
+.number8 {
+  grid-area: area-8;
+}
+
+.number9 {
+  grid-area: area-9;
+}
+
+.multiplicar {
+  grid-area: area-multiplicar;
+}
+
+.number4 {
+  grid-area: area-4;
+}
+
+.number5 {
+  grid-area: area-5;
+}
+
+.number6 {
+  grid-area: area-6;
+}
+
+.restar {
+  grid-area: area-restar;
+}
+
+.number1 {
+  grid-area: area-1;
+}
+
+.number2 {
+  grid-area: area-2;
+}
+
+.number3 {
+  grid-area: area-3;
+}
+
+.number0 {
+  grid-area: area-0;
+}
+
+.igual {
+  grid-area: area-igual;
+}
+
+/* GRID TABLE */
+.calculadora {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "area-total area-total area-total area-total"
+    "area-do area-do area-flecha area-dividir"
+    "area-7 area-8 area-9 area-multiplicar"
+    "area-4 area-5 area-6 area-restar"
+    "area-1 area-2 area-3 area-sumar"
+    "area-0 area-0 area-0 area-igual";
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ELEMENTOS */
+.number7,
+.do,
+.total,
+.restar,
+.sumar,
+.multiplicar,
+.dividir,
+.igual,
+.flecha,
+.number {
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+  border: 3px solid;
+  padding: 1rem;
+  margin: 0;
+}
+
+.do, .flecha{
+padding: 0;
+padding-top: 40px;
+
+}
+
+/* BACKGROUNDS */
+.firma {
+  background-color: black;
+  color: greenyellow;
+  padding-top: 5px;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.restar,
+.sumar,
+.multiplicar,
+.dividir,
+.igual {
+  background-color: chartreuse;
+}
+
+.number,
+.do,
+.flecha {
+  background-color: gray;
+  font-weight: 800;
+}
+
+.total {
+  background-color: black;
+  padding: 12px;
+}
+
+.total p {
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .calculadora {
+    grid-template-areas:
+      "area-total area-total area-total area-total"
+      "area-do area-do area-flecha area-dividir"
+      "area-7 area-8 area-9 area-multiplicar"
+      "area-4 area-5 area-6 area-restar"
+      "area-1 area-2 area-3 area-sumar"
+      "area-0 area-0 area-0 area-igual";
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .number7,
+  .do,
+  .total,
+  .restar,
+  .sumar,
+  .multiplicar,
+  .dividir,
+  .igual,
+  .flecha,
+  .number {
+    font-size: 3rem;
+    padding: 1.5rem;
+  }
+}
